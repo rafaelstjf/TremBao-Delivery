@@ -1,0 +1,36 @@
+*rede social:
+	Funcionais
+	1- Criar/alterar perfil
+	2- Fazer/alterar postagens
+	3- Adicionar/alterar amigos
+	4- Interagir com postagens (curtir, comentar, compartilhar e etc)
+	5- Enviar mensagens para amigos
+	6- Fazer upload de fotos e vídeos
+	7- Criar grupos de usuários
+	8- Administrar grupos de usuários
+	9- Entrar e sair de grupos de usuários
+	10- Marcar amigo em determinada postagem
+*delivery de comida
+	Funcionais
+	1- Cadastrar conta do cliente
+	2- Cadastrar restaurante
+	3- Visualizar página do restaurante
+	4- Cadastrar refeição no cardápio
+	5- Visualizar cardápio
+	6- Realizar pedido
+	7- Comentar e avaliar sobre o restaurante
+	8- Contatar o restaurante
+	9- Comparar preços entre um produto de diferentes restaurantes
+	10- Comentar e avaliar uma determinada refeição
+*finanças
+	Funcionais:
+	1- Cadastrar perfil de usuário
+	2- Inserir, alterar e remover ganhos mensais
+	3- Inserir, alterar e remover despesas
+	4- Inserir limite de gastos
+	5- Visualizar relatório com gastos mensais
+	6- Gerar gráficos de consumo em intervalos regulares
+	7- Estabelecer objetivos de compra
+	8- Exportar dados para xml
+	9- 
+	10- 

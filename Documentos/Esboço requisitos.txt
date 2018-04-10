@@ -1,0 +1,12 @@
+Delivery de comida
+1 - O sistema deve permitir ao usuário cadastrar uma nova conta, contendo nome, endereço de entrega, cpf, cartão de crédito facultativo e o tipo de conta(dono de restaurante ou cliente)
+2 - O sistema deve permitir ao dono de restaurante cadastrar filiais do seu restaurante no sistema contendo localização, nome, cnpj e fotos do resturante
+3 - O sistema deve permitir ao usuário visualizar a página de um restaurante previamente cadastrado no sistema exibindo as informações do restaurante e as avaliações dos usuários
+4 -  O sistema deve permitir ao dono de restaurante cadastrar uma refeição em um determinado cardápio, contendo nome da refeição, preço, ingredientes e imagens da refeição
+5 - O sistema deve permitir ao usuário visualizar o cardápio de um determinado restaurante, exibindo os dados de cada refeição e os comentários e avaliações referentes à mesma
+6 - O sistema deve permitir ao cliente realizar um pedido contendo refeições de um restaurante específico e deve ainda permitir escolher o método de pagamento
+7 - O sistema deve permitir ao cliente comentar e avaliar sobre um restaurante que este tenha realizado pedido
+8 - O sistema deve permitir ao cliente entrar em contato com um restaurante por meio de mensagem de texto
+9 - O sistema deve permitir ao usuário realizar a busca de uma refeição específica e visualizar o preço em todos os restaurantes que oferecerem a mesma refeição
+10 - O sistema deve permitir ao usuário comentar e avaliar uma determinada refeição que este tenha solicitado
+
