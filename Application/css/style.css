@@ -1685,19 +1685,19 @@ ul.women_pagenation li a:hover{
 .register{
 	padding:3em 0 5em 0;
 }
-.register-top-grid h3, .register-bottom-grid h3 {
+.register-top-grid h3, .register-bottom-grid h3, .register-middle-grid h3 {
 	color:#000000;
 	font-size: 1.4em;
 	padding-bottom: 15px;
 	margin: 0;
 	font-weight: 600;
 }
-.register-top-grid div, .register-bottom-grid div {
+.register-top-grid div, .register-bottom-grid div, .register-middle-grid div {
 	width: 48%;
 	float: left;
 	margin: 10px 0;
 }
-.register-top-grid span, .register-bottom-grid span {
+.register-top-grid span, .register-bottom-grid span, .register-middle-grid span {
 	color:#555;
 	font-size: 1.1em;
 	padding-bottom: 0.2em;
@@ -1707,7 +1707,7 @@ ul.women_pagenation li a:hover{
 .main {
 	background: #F8F8F8;
 }
-.register-top-grid input[type="text"], .register-bottom-grid input[type="password"] {
+.register-middle-grid input[type="text"], .register-middle-grid select, .register-middle-grid[type="password"], .register-top-grid input[type="text"], .register-bottom-grid input[type="password"], .register-bottom-grid input[type="text"] {
 	border: 1px solid #EEE;
 	outline-color:#FF5B36;
 	width: 96%;
@@ -3026,10 +3026,10 @@ a.morebtn{
 	.login-left p, .login-right p {
 		margin: 0 0 1.2em 0;
 	}
-	.register-top-grid h3, .register-bottom-grid h3 {
+	.register-top-grid h3, .register-bottom-grid h3, .register-middle-grid h3 {
 		font-size: 1.3em;
 	}
-	.register-top-grid span, .register-bottom-grid span {
+	.register-top-grid span, .register-bottom-grid span, .register-middle-grid span {
 		font-size: 1em;
 	}
 	.register-but form input[type="submit"] {
@@ -3038,7 +3038,7 @@ a.morebtn{
 	.register {
 		padding: 2em 0 3em 0;
 	}
-	.register-top-grid input[type="text"], .register-bottom-grid input[type="password"] {
+	.register-top-grid input[type="text"], .register-bottom-grid input[type="text"], .register-bottom-grid input[type="password"], .register-middle-grid input[type="text"], .register-middle-grid select {
 		padding: 0.4em;
 	}
 	.login-left h3, .login-right h3 {
@@ -3387,13 +3387,13 @@ a.morebtn{
 	.login-right input[type="submit"] {
 		padding: 0.4em 1em;
 	}
-	.register-top-grid input[type="text"], .register-bottom-grid input[type="password"] {
+	.register-top-grid input[type="text"], .register-bottom-grid input[type="password"], .register-middle-grid input[type="text"], .register-middle-grid select {
 		padding: 0.3em;
 	}
 	.register-but form input[type="submit"] {
 		padding: 0.3em 1.3em;
 	}
-	.register-top-grid h3, .register-bottom-grid h3 {
+	.register-top-grid h3, .register-bottom-grid h3, .register-middle-grid h3 {
 		padding-bottom: 10px;
 	}
 	ul.previous li a {
