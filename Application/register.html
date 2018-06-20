@@ -57,8 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			if (valid)
 				alert('Conta registrada com sucesso');
 			else
-				alert('Campo obrigatório não preenchido'), false;
-			conslo.log(valid);
+				alert('Campo obrigatório não preenchido');
 			return valid;
 		}
 	</script>
@@ -267,7 +266,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="clearfix"> </div>
 					<div class="register-but">
 							<form action="login.html">
-							<input type="submit" name="registrar" value="registrar" onclick="validForm(fields);">
+							<input type="submit" name="registrar" value="registrar" onclick="return validForm(fields);">
 							<div class="clearfix"> </div>
 						</form>
 					</div>
