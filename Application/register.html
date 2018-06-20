@@ -6,75 +6,118 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>TremBao Delivery</title>
-  <meta charset="UTF-8">
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- Custom Theme files -->
+	<title>TremBao Delivery</title>
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Custom Theme files -->
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--webfont-->
-<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<!--Animation-->
-<script src="js/wow.min.js"></script>
-<link href="css/animate.css" rel='stylesheet' type='text/css' />
-<script>
-	new WOW().init();
-</script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-				});
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--webfont-->
+	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'
+	 rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!--Animation-->
+	<script src="js/wow.min.js"></script>
+	<link href="css/animate.css" rel='stylesheet' type='text/css' />
+	<script>
+		new WOW().init();
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
 			});
-		</script>
-<script src="js/simpleCart.min.js"> </script>	
-<!-- payment related scripts-->
+		});
+	</script>
+	<script type="text/javascript">
+
+		function isEmpty(val) {
+			return ((val !== '') && (val !== undefined) && (val.length > 0) && (val !== null));
+		}
+		function validForm(form) {
+			var fields = form.elements["obs"];
+			var valid = true;
+			for (var i = 0; i < fields.length; i++) {
+				if (!fields[i].value) {
+					valid = false;
+					break;
+				}
+			}
+			if (valid)
+				alert('Conta registrada com sucesso');
+			else
+				alert('Campo obrigatório não preenchido'), false;
+			conslo.log(valid);
+			return valid;
+		}
+	</script>
+	<script src="js/simpleCart.min.js"> </script>
+	<!-- payment related scripts-->
 </head>
+
 <body>
-    <!-- header-section-starts -->
+	<!-- header-section-starts -->
 	<div class="header">
 		<div class="container">
 			<div class="top-header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+					<a href="index.html">
+						<img src="images/logo.png" class="img-responsive" alt="" />
+					</a>
 				</div>
 				<div class="header-right">
-						<div class="cart box_1">
-							<a href="checkout.html">
-								<h3> <span class="simpleCart_total"> R$0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> itens)<img src="images/bag.png" alt=""></h3>
-							</a>	
-							<p><a href="javascript:;" class="simpleCart_empty">Esvaziar carrinho</a></p>
-							<div class="clearfix"> </div>
-						</div>
+					<div class="cart box_1">
+						<a href="checkout.html">
+							<h3>
+								<span class="simpleCart_total"> R$0.00 </span> (
+								<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> itens)
+								<img src="images/bag.png" alt="">
+							</h3>
+						</a>
+						<p>
+							<a href="javascript:;" class="simpleCart_empty">Esvaziar carrinho</a>
+						</p>
+						<div class="clearfix"> </div>
 					</div>
+				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
-			<div class="menu-bar">
+		<div class="menu-bar">
 			<div class="container">
 				<div class="top-menu">
 					<ul>
-						<li><a href="#Home" class="scroll">Página inicial</a></li>|
-						<li><a href="restaurants.html">Restaurantes</a></li>|
+						<li>
+							<a href="#Home" class="scroll">Página inicial</a>
+						</li>|
+						<li>
+							<a href="restaurants.html">Restaurantes</a>
+						</li>|
 						<div class="clearfix"></div>
 					</ul>
 				</div>
 				<div class="login-section">
 					<ul>
-						<li><a href="login.html">Login</a>  </li> |
-						<li class="active"><a href="register.html">Registrar</a> </li> |
-						<li><a href="#">Ajuda</a></li>
+						<li>
+							<a href="login.html">Login</a>
+						</li> |
+						<li class="active">
+							<a href="register.html">Registrar</a>
+						</li> |
+						<li>
+							<a href="#">Ajuda</a>
+						</li>
 						<div class="clearfix"></div>
 					</ul>
 				</div>
@@ -85,63 +128,75 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- header-section-ends -->
 	<!-- content-section-starts -->
 	<div class="content">
-	<div class="main">
-	   <div class="container">
-		  <div class="register">
-			<form>
-				<div class="register-top-grid">
-					<h3>INFORMAÇÕES PESSOAIS</h3>
-					<div class="wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Nome
-							<label>*</label>
-						</span>
-						<input type="text">
-					</div>
-					<div class="wow fadeInRight" data-wow-delay="0.4s">
-						<span>Sobrenome
-							<label>*</label>
-						</span>
-						<input type="text">
-					</div>
-					<div class="wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Endereço de email
-							<label>*</label>
-						</span>
-						<input type="text">
-					</div>
-					<div class="wow fadeInRight" data-wow-delay="0.4s">
-						<span>CPF
-							<label>*</label>
-						</span>
-						<input type="text">
-					</div>
-					<div class="wow fadeInRight" data-wow-delay="0.4s">
-						<span>Endereço<label>*</label></span>
-						<input type="text">
-					</div>
-					<div class="wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Cidade<label>*</label></span>
-						<input type="text">
-					</div>
-					<div class="wow fadeInRight" data-wow-delay="0.4s">
-						<span>CEP<label>*</label></span>
-						<input type="text">
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-				<div class="register-middle-grid">
-					<h3>INFORMAÇÕES DE PAGAMENTO</h3>
-					<fieldset>
-						<div class="wow fadeInLeft" data-wow-delay="0.4s">
-							<span>Nome no cartão<label>*</label></span>
-							<input type="text" placeholder="Nome do dono do cartão">
+		<div class="main">
+			<div class="container">
+				<div class="register">
+					<form name="fields">
+						<div class="register-top-grid">
+							<h3>INFORMAÇÕES PESSOAIS</h3>
+							<div class="wow fadeInLeft" data-wow-delay="0.4s">
+								<span>Nome
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
+							</div>
+							<div class="wow fadeInRight" data-wow-delay="0.4s">
+								<span>Sobrenome
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
+							</div>
+							<div class="wow fadeInLeft" data-wow-delay="0.4s">
+								<span>Endereço de email
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
+							</div>
+							<div class="wow fadeInRight" data-wow-delay="0.4s">
+								<span>CPF
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
+							</div>
+							<div class="wow fadeInRight" data-wow-delay="0.4s">
+								<span>Endereço
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
+							</div>
+							<div class="wow fadeInLeft" data-wow-delay="0.4s">
+								<span>Cidade
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
+							</div>
+							<div class="wow fadeInRight" data-wow-delay="0.4s">
+								<span>CEP
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
+							</div>
 						</div>
-						<div>
-							<span>Número do cartão<label>*</label></span>
-							<input type="text" placeholder="Numero do cartão de débito/crédito">
-						</div>
-						<div>
-						<span>Data de expiração<label>*</label></span>
+						<div class="clearfix"> </div>
+						<div class="register-middle-grid">
+							<h3>INFORMAÇÕES DE PAGAMENTO</h3>
+							<fieldset>
+								<div class="wow fadeInLeft" data-wow-delay="0.4s">
+									<span>Nome no cartão
+										<label>*</label>
+									</span>
+									<input type="text" placeholder="Nome do dono do cartão" name="obs">
+								</div>
+								<div>
+									<span>Número do cartão
+										<label>*</label>
+									</span>
+									<input type="text" placeholder="Numero do cartão de débito/crédito" name="obs">
+								</div>
+								<div>
+									<span>Data de expiração
+										<label>*</label>
+									</span>
 									<select name="expiry-month">
 										<option>Mês</option>
 										<option value="01">Jan (01)</option>
@@ -170,90 +225,114 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<option value="22">2022</option>
 										<option value="23">2023</option>
 									</select>
+								</div>
+								<div>
+									<span>Código de segurança do cartão
+										<label>*</label>
+									</span>
+									<input type="text" placeholder="Código de segurança" id="obs">
+								</div>
+	
+							</fieldset>
+						</div>
+						<div class="register-bottom-grid">
+							<h3>INFORMAÇÕES DE LOGIN</h3>
+	
+							<div class="wow fadeInLeft" data-wow-delay="0.4s">
+								<span>Nome de usuário
+									<label>*</label>
+								</span>
+								<input type="text" name="obs">
 							</div>
-							<div><span>Código de segurança do cartão<label>*</label></span>
-								<input type="text" placeholder="Código de segurança"></div>
-						
-					</fieldset>
-				</div>
-				<div class="register-bottom-grid">
-					<h3>INFORMAÇÕES DE LOGIN</h3>
-			
-					<div class="wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Nome de usuário
-							<label>*</label>
-						</span>
-						<input type="text">
-					</div>
-					<div class="wow fadeInRight" data-wow-delay="0.4s">
-						<span>Tipo de conta</span>
-						<input type="radio" name="accounType" value="Cliente" checked>Cliente
-						<br>
-						<input type="radio" name="accounType" value="Dono de restaurante">Dono de restaurante
-					</div>
-					<div class="wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Senha
-							<label>*</label>
-						</span>
-						<input type="password">
-					</div>
-					<div class="wow fadeInRight" data-wow-delay="0.4s">
-						<span>Confirmar Senha
-							<label>*</label>
-						</span>
-						<input type="password">
+							<div class="wow fadeInRight" data-wow-delay="0.4s">
+								<span>Tipo de conta</span>
+								<input type="radio" name="accounType" value="Cliente" checked>Cliente
+								<br>
+								<input type="radio" name="accounType" value="Dono de restaurante">Dono de restaurante
+							</div>
+							<div class="wow fadeInLeft" data-wow-delay="0.4s">
+								<span>Senha
+									<label>*</label>
+								</span>
+								<input type="password" name="obs">
+							</div>
+							<div class="wow fadeInRight" data-wow-delay="0.4s">
+								<span>Confirmar Senha
+									<label>*</label>
+								</span>
+								<input type="password" name="obs">
+							</div>
+						</div>
+					</form>
+					<div class="clearfix"> </div>
+					<div class="register-but">
+							<form action="login.html">
+							<input type="submit" name="registrar" value="registrar" onclick="validForm(fields);">
+							<div class="clearfix"> </div>
+						</form>
 					</div>
 				</div>
-			</form>
-				<div class="clearfix"> </div>
-				<div class="register-but">
-				   <form>
-					   <input type="submit" value="submit">
-					   <div class="clearfix"> </div>
-				   </form>
-				</div>
-		   </div>
-	     </div>
-	    </div>
-	<!-- content-section-ends -->
+			</div>
+		</div>
+		<!-- content-section-ends -->
 	<!-- contact selection-starts-->
 	<div class="contact-section" id="contact">
 		<div class="container">
 			<div class="contact-section-grids">
 				<div class="col-md-3 contact-section-grid wow fadeInRight" data-wow-delay="0.4s">
-						<h4>Siga-nos no...</h4>
-						<ul>
-							<li><i class="fb"></i></li>
-							<li class="data"> <a href="#">  Facebook</a></li>
-						</ul>
-						<ul>
-							<li><i class="tw"></i></li>
-							<li class="data"> <a href="#">Twitter</a></li>
-						</ul>
-						<ul>
-							<li><i class="in"></i></li>
-							<li class="data"><a href="#"> Linkedin</a></li>
-						</ul>
-						<ul>
-							<li><i class="gp"></i></li>
-							<li class="data"><a href="#">Google Plus</a></li>
-						</ul>
-					</div>
+					<h4>Siga-nos no...</h4>
+					<ul>
+						<li>
+							<i class="fb"></i>
+						</li>
+						<li class="data">
+							<a href="#"> Facebook</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<i class="tw"></i>
+						</li>
+						<li class="data">
+							<a href="#">Twitter</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<i class="in"></i>
+						</li>
+						<li class="data">
+							<a href="#"> Linkedin</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<i class="gp"></i>
+						</li>
+						<li class="data">
+							<a href="#">Google Plus</a>
+						</li>
+					</ul>
+				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
-</div>
+	</div>
 	<!-- contact-section-ends -->
 	<!-- footer-section-starts -->
 	<div class="footer">
-			<div class="container">
-				<p class="wow fadeInLeft" data-wow-delay="0.4s">&copy; 2014  All rights  Reserved | Template by &nbsp;<a href="http://w3layouts.com" target="target_blank">W3Layouts</a></p>
-				<p class="wow fadeInLeft" data-wow-delay="0.4s">Logo designed by <a href="http://www.freepik.com" target="target_blank">Freepik</a></p>
-			</div>
+		<div class="container">
+			<p class="wow fadeInLeft" data-wow-delay="0.4s">&copy; 2014 All rights Reserved | Template by &nbsp;
+				<a href="http://w3layouts.com" target="target_blank">W3Layouts</a>
+			</p>
+			<p class="wow fadeInLeft" data-wow-delay="0.4s">Logo designed by
+				<a href="http://www.freepik.com" target="target_blank">Freepik</a>
+			</p>
 		</div>
+	</div>
 	<!-- footer-section-ends -->
-	  <script type="text/javascript">
+		<script type="text/javascript">
 						$(document).ready(function() {
 							/*
 							var defaults = {
@@ -267,8 +346,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							$().UItoTop({ easingType: 'easeOutQuart' });
 							
 						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 </body>
 </html>
