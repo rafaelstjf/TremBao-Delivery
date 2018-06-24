@@ -129,135 +129,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="register">
 					<form name="fields">
 						<div class="register-top-grid">
-							<h3>INFORMAÇÕES PESSOAIS</h3>
-							<div class="wow fadeInLeft" data-wow-delay="0.4s">
-								<span>Nome
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-							<div class="wow fadeInRight" data-wow-delay="0.4s">
-								<span>Sobrenome
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-							<div class="wow fadeInLeft" data-wow-delay="0.4s">
-								<span>Endereço de email
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-							<div class="wow fadeInRight" data-wow-delay="0.4s">
-								<span>CPF
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-							<div class="wow fadeInRight" data-wow-delay="0.4s">
-								<span>Endereço
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-							<div class="wow fadeInLeft" data-wow-delay="0.4s">
-								<span>Cidade
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-							<div class="wow fadeInRight" data-wow-delay="0.4s">
-								<span>CEP
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-						<div class="register-middle-grid">
-							<h3>INFORMAÇÕES DE PAGAMENTO</h3>
-							<fieldset>
-								<div class="wow fadeInLeft" data-wow-delay="0.4s">
-									<span>Nome no cartão
-										<label>*</label>
-									</span>
-									<input type="text" placeholder="Nome do dono do cartão" name="obs">
-								</div>
-								<div>
-									<span>Número do cartão
-										<label>*</label>
-									</span>
-									<input type="text" placeholder="Numero do cartão de débito/crédito" name="obs">
-								</div>
-								<div>
-									<span>Data de expiração
-										<label>*</label>
-									</span>
-									<select name="expiry-month">
-										<option>Mês</option>
-										<option value="01">Jan (01)</option>
-										<option value="02">Feb (02)</option>
-										<option value="03">Mar (03)</option>
-										<option value="04">Apr (04)</option>
-										<option value="05">May (05)</option>
-										<option value="06">June (06)</option>
-										<option value="07">July (07)</option>
-										<option value="08">Aug (08)</option>
-										<option value="09">Sep (09)</option>
-										<option value="10">Oct (10)</option>
-										<option value="11">Nov (11)</option>
-										<option value="12">Dec (12)</option>
-									</select>
-									<select name="expiry-year">
-										<option value="13">2013</option>
-										<option value="14">2014</option>
-										<option value="15">2015</option>
-										<option value="16">2016</option>
-										<option value="17">2017</option>
-										<option value="18">2018</option>
-										<option value="19">2019</option>
-										<option value="20">2020</option>
-										<option value="21">2021</option>
-										<option value="22">2022</option>
-										<option value="23">2023</option>
-									</select>
-								</div>
-								<div>
-									<span>Código de segurança do cartão
-										<label>*</label>
-									</span>
-									<input type="text" placeholder="Código de segurança" id="obs">
-								</div>
-
-							</fieldset>
-						</div>
-						<div class="register-bottom-grid">
-							<h3>INFORMAÇÕES DE LOGIN</h3>
-
-							<div class="wow fadeInLeft" data-wow-delay="0.4s">
-								<span>Nome de usuário
-									<label>*</label>
-								</span>
-								<input type="text" name="obs">
-							</div>
-							<div class="wow fadeInLeft" data-wow-delay="0.4s">
-								<span>Senha
-									<label>*</label>
-								</span>
-								<input type="password" name="obs">
-							</div>
-							<div class="wow fadeInRight" data-wow-delay="0.4s">
-								<span>Confirmar Senha
-									<label>*</label>
-								</span>
-								<input type="password" name="obs">
-							</div>
-						</div>
+							<h3>SELECIONE O TIPO DE CADASTRO</h3>
 					</form>
-					<div class="clearfix"> </div>
 					<div class="register-but">
-							<form action="login.html">
-							<input type="submit" name="registrar" value="registrar" onclick="return validForm(fields);">
+						<form action="register.html">
+							<input type="submit" name="Cliente" value="Cliente" >
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+					<div class="register-but">
+							<form action="rest_register.html">
+							<input type="submit" name="Restaurante" value="Restaurante">
 							<div class="clearfix"> </div>
 						</form>
 					</div>
